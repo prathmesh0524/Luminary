@@ -9,46 +9,43 @@
 </head>
 <body>
   <img class="image-gradient" src="gradient.png" alt="gradient"/>
-
   <div class="layer-blur"></div>
+
   <div class="container">
     <header>
       <h1 class="logo">IP Facilitation</h1>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Resources</a>
-        <a href="#">Contact</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="convert.php">Convert</a>
+        <a href="assistant.html">Assistant</a>
+        <a href="admin.php">Admin</a>
       </nav>
-      <button class="btn-signing">Login</button>
+      <a class="btn-signing" href="login.php">Login</a>
     </header>
 
     <main>
       <div class="content">
         <div class="tag-box">
-          <div class="tag">Welcome &vert;</div>
+          <div class="tag">Secure Your Ideas &vert;</div>
         </div>
-        <h1>Manage Intellectual Property<br> with Ease</h1>
+        <h1>Intellectual Property Simplified</h1>
         <p class="description">
-          Our facilitation center helps innovators protect their IPs with streamlined documentation, guidance, and registration services.
+          Streamline your patent/trademark filings with our AI-powered facilitation platform.
         </p>
         <div class="buttons">
-          <a href="#" class="btn-get-started">Explore Services</a>
-          <a href="#" class="btn-signing-main">Get Started</a>
+          <a href="convert.php" class="btn-get-started">Start Filing</a>
+          <a href="register.php" class="btn-signing-main">Sign Up</a>
         </div>
       </div>
     </main>
 
+    <!-- 3D Robot -->
     <spline-viewer class="robot-3d" url="https://prod.spline.design/fRot09A-sPJViITa/scene.splinecode"></spline-viewer>
-    
-    <!-- Chatbot Icon -->
-    <div id="chatbot-icon" onclick="toggleChatbot()">
-      🤖 Chat with us
-    </div>
 
-    <!-- Chatbot Popup -->
+    <!-- Chatbot -->
+    <div id="chatbot-icon" onclick="toggleChatbot()">🤖 Need Help?</div>
     <div id="chatbot-container">
-      <iframe src="https://your-chatbot-url.com" frameborder="0"></iframe>
+      <iframe src="assistant.html"></iframe>
     </div>
   </div>
 
@@ -57,7 +54,6 @@
   <script src="script.js"></script>
   <script>
     AOS.init();
-
     function toggleChatbot() {
       const chatbot = document.getElementById("chatbot-container");
       chatbot.style.display = chatbot.style.display === "block" ? "none" : "block";
@@ -65,3 +61,4 @@
   </script>
 </body>
 </html>
+
