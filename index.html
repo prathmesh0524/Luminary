@@ -1,58 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IP Facilitation Center</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
-    <img class="image-gradient" src="gradient.png" alt="gradient">
-    
-    <div class="layer-blur"></div>
-    <div class="container">
-        <header>
-            <h1 class="logo">Prat</h1>
-            <nav>
-                <a href="javascript:void(0);">About</a>
-                <a href="javascript:void(0);">FEATURES</a>
-                <a href="javascript:void(0);"></a>
-                <a href="javascript:void(0);">DOCS</a>
-            </nav>
-            <button class="btn-signing">Sign In</button>
-        </header>
-        
-        <main>
-            <div class="content">
-                <div class="tag-box">
-                    <div class="tag">INTRODUCING &vert;</div>
-                </div>
-                <h1>Email for<br> DEVELOPERS</h1>
-                <p class="description">
-                    The best way to reach humans instead of spam folders, 
-                    deliver transactional and marketing emails at scale.
-                </p>
-                <div class="buttons">
-                    <a href="javascript:void(0);" class="btn-get-started">Documentation &gt;</a>
-                    <a href="javascript:void(0);" class="btn-signing-main">Get Started</a>
-                </div>
-            </div>
-        </main>
+  <img class="image-gradient" src="gradient.png" alt="gradient"/>
 
-        
-        
-        <spline-viewer class="robot-3d"url="https://prod.spline.design/fRot09A-sPJViITa/scene.splinecode"></spline-viewer>
+  <div class="layer-blur"></div>
+  <div class="container">
+    <header>
+      <h1 class="logo">IP Facilitation</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button class="btn-signing">Login</button>
+    </header>
+
+    <main>
+      <div class="content">
+        <div class="tag-box">
+          <div class="tag">Welcome &vert;</div>
+        </div>
+        <h1>Manage Intellectual Property<br> with Ease</h1>
+        <p class="description">
+          Our facilitation center helps innovators protect their IPs with streamlined documentation, guidance, and registration services.
+        </p>
+        <div class="buttons">
+          <a href="#" class="btn-get-started">Explore Services</a>
+          <a href="#" class="btn-signing-main">Get Started</a>
+        </div>
+      </div>
+    </main>
+
+    <spline-viewer class="robot-3d" url="https://prod.spline.design/fRot09A-sPJViITa/scene.splinecode"></spline-viewer>
+    
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" onclick="toggleChatbot()">
+      🤖 Chat with us
     </div>
 
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- Chatbot Popup -->
+    <div id="chatbot-container">
+      <iframe src="https://your-chatbot-url.com" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleChatbot() {
+      const chatbot = document.getElementById("chatbot-container");
+      chatbot.style.display = chatbot.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
-
-
-
-
